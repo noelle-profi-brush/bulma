@@ -12,8 +12,11 @@
       {% endfor %}
     {% endif %}
 
-    {% include global/support.html %}
-    {% include global/native.html %}
+    {% unless page.hide_footer %}
+      {% include global/support.html %}
+      {% include global/native.html %}
+    {% endunless %}
+
     {% include global/about.html %}
 
     <script src="{{ site.url }}/assets/vendor/clipboard-2.0.11.min.js"></script>
@@ -26,5 +29,6 @@
     });
     </script>
     <script src="{{ site.url }}/assets/javascript/main.js"></script>
+    {% include global/customizer.html %}
   </body>
 </html>
