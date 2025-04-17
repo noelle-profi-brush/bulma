@@ -1,6 +1,44 @@
 # Bulma Changelog
 
+## 1.0.3
+
+### Bug Fixes
+
+- Fix #3842: restore use of `$easing`, `$radius-rounded` and `$speed` Sass variables
+- Fix #3920: migrate code to avoid Sass 1.80 deprecation warning of global built-in functions
+- Fix #3822: Non-minified version of bulma-prefixed was missing
+- Fix #3805: helper classes were missing prefix
+
+### Documentation Fixes
+
+- Fix #3904, #3884: fix website horizontal overflow
+- Fix #3849: fix Light Mode color swatches in Dark Mode
+- Fix #3918: broken placeholder images
+- Fix #3926: broken documentation hero
+
 ## 1.0.2
+
+### Improvements
+
+- Smart Grid `is-col-min` now goes up to `32` (Fixes #3829)
+- Remove need for `is-variable` modifier for Column gaps
+- You can have a list of radio buttons or checkboxes with the `radios` and `checkboxes` classes respectively
+- Add `is-max-tablet` modifier to the Container element
+- Add `currentColor` and `inherit` as possible values for the color and background helpers
+- The Section can now have a minimum height of `100vh` with the `is-fullheight` modifier
+- Add more SCSS variables:
+  - `$input-border-style`
+  - `$input-border-width`
+  - `$label-spacing`
+  - `$field-block-spacing`
+- Add more CSS variables:
+  - `--bulma-input-border-style`
+  - `--bulma-input-border-width`
+  - `--bulma-label-color`
+  - `--bulma-label-spacing`
+  - `--bulma-label-weight` 
+  - `--bulma-help-size`
+  - `--bulma-field-block-spacing`
 
 ### Bug fixes
 
@@ -9,6 +47,9 @@
 - Fix #3743: make sure 12 columns system take up whole width
 - Fix #3799: restore variable columns
 - Fix #3846: restore `--bulma-column-gap` CSS variable
+- Fix #3775: `has-background` helpers should only affect element it's applied to
+- Fix #3856: Sass nested rule deprecation warning
+- Fix #3757: restore use of `$navbar-burger-color`
 
 ## 1.0.1
 
